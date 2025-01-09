@@ -1,1 +1,1 @@
-# 6sense-Backend-Development-Challenge
+# 6sense Backend Development Challenge
