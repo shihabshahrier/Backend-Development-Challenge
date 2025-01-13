@@ -1,6 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const mongoose = require("mongoose");
+const { connect } = require("mongoose");
 const bodyParser = require("body-parser");
 
 const productRoutes = require("./routes/productRoutes");
@@ -16,12 +16,11 @@ app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 
 // Database connection
-mongoose
-  .connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDB connected");
     app.listen(process.env.PORT, () =>
       console.log(`Server running on http://localhost:${process.env.PORT}`)
     );
   })
-  .catch((error) => console.error(error));
+  .catch((error) => console.error("Database connection error:", error));
