@@ -41,8 +41,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd product-api
+   git clone https://github.com/shihabshahrier/6sense-Backend-Development-Challenge.git
+   cd 6sense-Backend-Development-Challenge.git
    ```
 
 2. Install dependencies:
@@ -50,10 +50,9 @@ Ensure you have the following installed:
    npm install
    ```
 
-3. Create a `.env` file in the project root and add the following:
-   ```plaintext
-   PORT=5000
-   MONGO_URI=mongodb://localhost:27017/products
+3. Rename `.env.example` file to `.env` in the project root or do the followong command:
+   ```bash
+   cp .env.example .env
    ```
 
 4. Start the development server:
