@@ -42,7 +42,7 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/shihabshahrier/Backend-Development-Challenge.git
-   cd 6sense-Backend-Development-Challenge.git
+   cd Backend-Development-Challenge.git
    ```
 
 2. Install dependencies:
