@@ -194,8 +194,5 @@ Response:
 
 ---
 
-## **Contributing**
-
-Feel free to open issues and submit pull requests for improvements or bug fixes.
 
 
