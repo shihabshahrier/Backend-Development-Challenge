@@ -124,23 +124,21 @@ For a product named **"Alpha Sorter"**:
 
 ## **Database Design**
 
+The database consists of two main entities: **Categories** and **Products**.
+
+- **Categories**:
+  - Each category has a unique `_id` and a `name`.
+  - Example: Electronics, Fashion, Home Appliances.
+
+- **Products**:
+  - Each product belongs to one category and contains fields such as `name`, `description`, `price`, `discount`, `image`, `status`, and `productCode`.
+
+
 ### **Entity Relationship Diagram (ERD)**
 
-```plaintext
-+-------------------+        +--------------------+
-|    Categories     |        |      Products      |
-+-------------------+        +--------------------+
-| _id (Primary Key) |<-----+ | _id (Primary Key)  |
-| name              |        | name               |
-|                   |        | description        |
-+-------------------+        | price              |
-                             | discount           |
-                             | image              |
-                             | status             |
-                             | productCode        |
-                             | category (FK)      |
-                             +--------------------+
-```
+Below is the ERD (Entity-Relationship Diagram) representing the database design:
+
+![ERD Diagram](assets/erd.jpeg)
 
 ---
 
